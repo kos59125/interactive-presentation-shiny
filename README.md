@@ -68,7 +68,8 @@ $ docker build -t interactive-presentation:develop .
 $ docker run -p 8080:8080 -e RUN_APP=presenter -d interactive-presentation:develop
 ```
 
-### Cloud Run（GCP）
+### ~~Cloud Run（GCP）~~
 
-アプリケーションのポートはデフォルト 8080 ですが、 PORT 環境変数で指定したポートに変更できます。
-これにより Cloud Run でも動かすことができます。
+~~アプリケーションのポートはデフォルト 8080 ですが、 PORT 環境変数で指定したポートに変更できます。
+これにより Cloud Run でも動かすことができます。~~
+→ Cloud Run は websocket 対応していないので現状では動かなかった。
