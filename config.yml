@@ -1,0 +1,17 @@
+default:
+   session_id: 00000000-0000-0000-0000-000000000000
+   respondent_app_url: http://localhost:8080/
+   table_presenter: presenter_dev
+   table_respondent: respondent_dev
+
+development:
+   debug: on
+
+production:
+   # session_id をランダムにして衝突させない。
+   # もしセッション中に shiny が落ちてしまったら
+   # DynamoDB からセッション ID を調べて直接指定すれば復元できる。
+   session_id: !expr Sys.getenv('SESSION_ID', uuid::UUIDgenerate())
+   respondent_app_url: !expr Sys.getenv('RESPONDENT_APP_URL')
+   bitly_access_token: !expr Sys.getenv('BITLY_ACCESS_TOKEN')
+   debug: off

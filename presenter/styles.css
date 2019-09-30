@@ -1,0 +1,59 @@
+h1, h2, h3, h4, h5, h6, div, article, p, aside {
+   font-family: 'Noto Sans JP', sans-serif;
+   color: #000000;
+}
+blockquote {
+   width: inherit;
+   margin: 0 26px 13px 50px;
+   font-size: 0.86em;
+   color: #808080;
+}
+slides > slide > hgroup + article blockquote p {
+   margin: 0.1em;
+   color: #808080;
+}
+blockquote p:before {
+   content: "> ";
+}
+pre, code {
+   font-family: 'Roboto Mono', sans-serif;
+   background-color: inherit;
+}
+pre {
+   left: 0;
+   width: inherit;
+   margin: 0 26px 13px 50px;
+   padding: 10px;
+   border-left: solid 10px #808080;
+}
+figure {
+   margin: auto;
+   text-align: center;
+}
+.table-matrix {
+   border: solid 1px black;
+}
+.table-matrix th, .table-matrix td {
+   border: solid 1px black;
+   padding: 24px;
+}
+
+.prettyprint {
+   background-color: #eff0f1;
+   border-left-style: none;
+}
+.prettyprint .lit {
+   font-style: normal;
+}
+.prettyprint .str {
+   font-style: normal;
+}
+.prettyprint .pln {
+   font-style: normal;
+}
+.prettyprint .pun {
+   font-style: normal;
+}
+.prettyprint .com {
+   font-style: normal;
+}
