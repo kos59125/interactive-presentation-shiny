@@ -45,7 +45,6 @@
 | --- | --- |
 | `session_id` | プレゼンテーションを区別するための ID（同一プレゼンテーションファイルでも発表のたびに異なる値をとる） |
 | `base_url` | ベース URL |
-| `loglevel` | ロギングレベル（logging パッケージ準拠） |
 | `table_presenter` | DynamoDB のテーブル名（ページ管理） |
 | `table_respondent` | DynamoDB のテーブル名（回答） |
 
